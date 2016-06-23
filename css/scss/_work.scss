@@ -1,0 +1,167 @@
+// .Work
+
+.Work {
+    padding-bottom: 5rem;
+    position: relative;
+    padding-top: 5rem;
+    overflow: hidden;
+    .square {
+        background-color: #f3df4f;
+        width: 60%;
+        height: 0;
+        padding-top: 60%;
+        position: absolute;
+        left: -20%;
+        transform: rotate(45deg);
+        bottom: -10%;
+    }
+    //.circle {
+    //    background-color: $dank;
+    //    width: 35%;
+    //    height: 0;
+    //    padding-top: 35%;
+    //    position: absolute;
+    //    right: -15%;
+    //    transform: rotate(45deg);
+    //    top: 15rem;
+    //    border-radius: 50%;
+    //}
+    h2.section_title .first_letter:after {
+        background-color: $grey;
+    }
+    .grid {
+        padding: 0.6rem;
+        max-width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+        .project {
+            width: 50%;
+            float: left;
+            padding: 0.5rem;
+            .overflow {
+                height: 15rem;
+                background-color: #B79EA2;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                background-size: cover;
+                background-position: 50% 50%;
+                cursor: pointer;
+                box-shadow: 0 0.7rem 1rem -0.5rem rgba(0, 0, 0, 0.1);
+            }
+            &:hover {
+                .slash {
+                    left: -30%;
+                    opacity: 1;
+                }
+                .contents {
+                    transform: translateX(0);
+                    opacity: 1;
+                    transition: .3s ease-out;
+                    transition-delay: 0.1s;
+                }
+            }
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #202020;
+                opacity: 0.8;
+                transition: .4s ease-out;
+            }
+            .logo {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                img {
+                    max-height: 45%;
+                    max-width: 60%;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                span {
+                    color: $white;
+                    line-height: 13.8rem;
+                    margin-top: 0.6rem;
+                    font-weight: 900;
+                    letter-spacing: 0.12rem;
+                    font-size: 1.6rem;
+                    text-shadow: 0 0.3rem 2rem rgba(0,0,0,0.3), 0 0.1rem 1rem rgba(0,0,0,0.2);
+                }
+            }
+            .slash {
+                content: "";
+                background-color: $pink;
+                background: linear-gradient($pink,darken($pink,1%));
+                position: absolute;
+                height: 101%;
+                width: 160%;
+                top: 0;
+                left: 140%;
+                transform: skewX(30deg) skewY(0deg) translateZ(0);
+                transition: .2s ease-in-out;
+                z-index: 1;
+                opacity: 0.5;
+            }
+            .contents {
+                display:table-cell;
+                padding: 3rem 3rem;
+                text-align: justify;
+                position: relative;
+                z-index:2;
+                transform: translateX(2rem);
+                opacity: 0;
+                transition: .05s linear;
+                transition-delay: 0s;
+                height: 13.8rem;
+                margin-top: 0.6rem;
+                text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+                color: lighten($dark,10%);
+                h3 {
+                    padding-bottom: 1.5rem;
+                    span {
+                        display: block;
+                        text-align: left;
+                    }
+                    span.type {
+                        font-size: 1rem;
+                        padding-top: 0.5rem;
+                    }
+                }
+                .role {
+                    font-size: 0.8rem;
+                    padding-bottom: 0.8rem;
+                }
+            }
+        }
+        .husky {
+            width: 60%;
+        }
+        .etools {
+            width: 40%;
+        }
+        .century {
+            width: 35%;
+        }
+        .leer {
+            width: 65%;
+        }
+        .evercoat {
+            width: 60%;
+        }
+        .livernois {
+            width: 40%;
+        }
+        .designcraft {
+            width: 30%;
+        }
+        .aacf {
+            width: 70%;
+        }
+    }
+}

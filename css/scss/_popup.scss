@@ -1,0 +1,111 @@
+// .Popup
+
+.Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $dark;
+    background: linear-gradient($dark, darken($dark,3%));
+    z-index: 420;
+    overflow-y: auto;
+    display: none;
+    opacity: 0;
+    transition: .08s ease-in;
+    &.shown {
+        opacity: 1;
+        .content {
+            opacity: 1;
+        }
+    }
+    .close {
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        max-width: 20%;
+        cursor: pointer;
+        &:hover {
+            img {
+                transform: scale(1.05) translateZ(0);
+            }
+        }
+        img {
+            max-width: 3.5rem;
+            transform: translateZ(0);
+            transition: .2s ease-in;
+        }
+    }
+    .content {
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+        height: 100%;
+        display: table;
+        padding: 3rem 0;
+        position: relative;
+        transition: 0.1s ease-in;
+        opacity: 0;
+        transition-delay: 0.1s;
+        > div {
+            display: table-cell;
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .name {
+            font-size: 2.5rem;
+            color: $white;
+            font-weight: 900;
+            letter-spacing: 0.1rem;
+            padding-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        .type {
+            font-size: 0.6rem;
+            color: lighten($grey,25%);
+            padding-bottom: 1.5rem;
+        }
+        .roles {
+            font-size: 0.7rem;
+            font-weight: 100;
+            color: $pink;
+            padding-bottom: 1rem;
+            letter-spacing: 0.08rem;
+            .role {
+                padding-bottom: 0.5rem;
+            }
+        }
+        .description {
+            color: lighten($grey,40%);
+            line-height: 1.9;
+            font-size: 0.9rem;
+            max-width: 33rem;
+            text-align: justify;
+            padding-bottom: 4rem;
+        }
+        .photos {
+            .photo {
+                padding-bottom: 3rem;
+                img {
+                    max-width: 100%;
+                    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1), 0 0.5rem 1rem rgba(0,0,0,0.1);
+                }
+                img.tablet {
+                    max-width: 600px;
+                    width: 80%;
+                }
+                img.mobile {
+                    max-width: 340px;
+                    width: 50%;
+                }
+                .text {
+                    padding-top: 1rem;
+                    color: lighten($dark,60%);
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

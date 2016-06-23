@@ -1,0 +1,54 @@
+// .Intro
+
+.Intro {
+    padding: 1rem;
+    min-height: 95%;
+    height: 95%; //ff
+    display: table;
+    width: 100%;
+    z-index: 1;
+    background-image: url('img/bgnew.jpg');
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    .svg {
+        //background-image: url('img/test.svg');
+        //background-attachment: fixed;
+        //background-size: 100% auto;
+        //background-size: cover;
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        //height: 105.3%;
+        //width: 100%;
+        //background-position: 50% 50%;
+    }
+    .contents {
+        display: table-cell;
+        vertical-align: middle;
+        .message {
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+            .area {
+                display: inline-block;
+                padding: 1rem;
+                border-radius: 2px;
+                color: $white;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-size: 2.2rem;
+                font-weight: 900;
+                padding-bottom: 1rem;
+                letter-spacing: 0.08rem;
+            }
+            h2 {
+                font-size: 0.9rem;
+                letter-spacing: 0.06rem;
+                //font-weight: 100;
+            }
+        }
+    }
+}

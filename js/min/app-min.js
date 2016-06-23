@@ -1,0 +1,1 @@
+function work_projects(){$("Work").on("click",".project",function(){var o=$(this).data("project")})}$(document).ready(function(){work_projects()});
